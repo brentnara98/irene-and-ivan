@@ -156,13 +156,13 @@
   .swatches{display:flex;justify-content:center;gap:14px;margin:18px 0 30px;flex-wrap:wrap}
   .sw{width:46px;height:46px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line)}
   /* ----- GIFTS ----- */
-  .gifts{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px}
-  @media(max-width:780px){.gifts{grid-template-columns:1fr}}
-  .gift{background:linear-gradient(180deg,#fff,var(--blush-50));border:1px solid var(--line);padding:32px 22px;text-align:center;border-radius:var(--r);transition:.3s}
-  .gift:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(60,40,50,.07)}
-  .gift .gi{font-family:'Great Vibes',cursive;font-size:30px;color:var(--rose);margin-bottom:6px}
-  .gift h4{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:22px;margin:6px 0 8px}
-  .gift p{font-size:13px;color:var(--ink-soft);margin:0 0 16px;min-height:44px}
+ /* ----- GIFTS (GCash QR) ----- */
+.qr-gift{max-width:360px;margin:30px auto 0;text-align:center}
+.qr-frame{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:0 12px 30px rgba(60,40,50,.07);display:inline-block}
+.qr-img{display:block;width:100%;max-width:280px;height:auto;border-radius:8px}
+.qr-label{font-family:'Cormorant Garamond',serif;font-size:22px;margin:20px 0 2px}
+.qr-name{font-family:'Great Vibes',cursive;font-size:30px;color:var(--rose);margin:0 0 8px}
+.qr-note{font-size:13px;color:var(--ink-soft);margin:0}
   /* ----- PHOTO PATTERNS ----- */
   /* Full-width photo band between sections */
   .photo-band{height:62vh;min-height:380px;max-height:560px;background-size:cover;background-position:center;position:relative}
@@ -582,36 +582,25 @@
 
 
 <!-- GIFTS -->
+<!-- GIFTS -->
 <section id="gifts">
   <div class="wrap">
     <div class="eyebrow" style="text-align:center">A Note on Gifts</div>
     <h2 class="section-title">With Grateful Hearts</h2>
     <div class="divider"></div>
-    <p class="section-sub">With all that the Lord hath provided, we have been truly blessed. Your presence and prayers are a joy to us — but if you desire to give nonetheless, a monetary gift through any of these would be greatly appreciated.</p>
+    <p class="section-sub">With all that the Lord hath provided, we have been truly blessed. Your presence and prayers are a joy to us — but if you desire to give nonetheless, a monetary gift through the QR code below would be greatly appreciated.</p>
 
-    <div class="gifts">
-      <div class="gift reveal">
-        <div class="gi">A Blessing</div>
-        <h4>A Blessing of Choice</h4>
-        <p>Bless us in any way the Lord lays on your heart.</p>
-        <a class="btn pink" target="_blank" rel="noopener" href="https://paymongo.page/l/ireneandivanablessingofchoice">Send a Blessing</a>
+    <div class="qr-gift reveal">
+      <div class="qr-frame">
+        <img class="qr-img" src="images/gcash-qr.png" alt="GCash QR code for Irene Grace A.">
       </div>
-      <div class="gift reveal">
-        <div class="gi">Honeymoon</div>
-        <h4>Honeymoon Fund</h4>
-        <p>Help us celebrate our first chapter together with a getaway.</p>
-        <a class="btn pink" target="_blank" rel="noopener" href="https://paymongo.page/l/ireneandivanhoneymoonfund">Contribute</a>
-      </div>
-      <div class="gift reveal">
-        <div class="gi">Our Home</div>
-        <h4>A Cozy Home</h4>
-        <p>Help us build the home where our love will grow.</p>
-        <a class="btn pink" target="_blank" rel="noopener" href="https://paymongo.page/l/ireneandivanacozyhome">Bless Our Home</a>
-      </div>
+      <p class="qr-label">Send a gift via GCash</p>
+      <p class="qr-name">Irene Grace A.</p>
+      <p class="qr-note">Scan the code with your GCash app. Transfer fees may apply.</p>
     </div>
   </div>
 </section>
-
+  
 <!-- STRIP BEFORE FAQ -->
 <div class="wrap" style="padding-top:0">
   <div class="strip-3 reveal" style="margin:0 0 0">
